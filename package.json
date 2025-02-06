@@ -1,15 +1,26 @@
 {
   "name": "cymbal-backend",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+=======
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> 6754aeb3c63f4576a83a9a8393912e2d5c14b5a0
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
+  "description": "",
+=======
+>>>>>>> 6754aeb3c63f4576a83a9a8393912e2d5c14b5a0
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

@@ -1,7 +1,6 @@
 // Initialize Mongoose Schema and Model for User
 const mongoose = require('mongoose');
-
-const Schema = new mongoose.Schema
+const { Schema } = mongoose;
 
 const userSchema = new Schema({
     refresh_token: {

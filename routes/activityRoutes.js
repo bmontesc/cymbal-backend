@@ -5,9 +5,9 @@ const { validateStravaToken } = require('../middleware/stravaAuth');
 const { authenticate } = require('../middleware/auth');
 
 // Route to sync running activities from Strava
-router.post('/sync', authenticate, validateStravaToken, syncAthleteActivities);
+router.post('/sync', validateStravaToken, syncAthleteActivities);
 
 // Route to get stored running activities from our database
-router.post('/', authenticate, getStoredActivities);
+router.get('/', getStoredActivities);
 
 module.exports = router;

@@ -2,7 +2,7 @@ const User = require('../models/user.model');
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = `http://localhost:4000/auth/callback`;
+const REDIRECT_URI = `http://localhost:${process.env.PORT}/auth/callback`;
 
 // Controller for initiating Strava OAuth
 const initiateStravaAuth = (req, res) => {

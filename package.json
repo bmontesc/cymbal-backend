@@ -22,6 +22,7 @@
 =======
 >>>>>>> 6754aeb3c63f4576a83a9a8393912e2d5c14b5a0
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongodb": "^6.12.0",

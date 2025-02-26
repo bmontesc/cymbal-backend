@@ -1,9 +1,14 @@
 require('dotenv').config();
 const express = require('express');
 const app = express()
+<<<<<<< HEAD
 
+=======
+const cors = require('cors');
+>>>>>>> 4338453 (backend changes)
 const mongoose = require('mongoose');
 
+app.use(cors());
 // Middleware to parse JSON bodies
 const userRoutes = require('./routes/userRoutes');
 const activityRoutes = require('./routes/activityRoutes');
@@ -31,6 +36,6 @@ app.use('/users', userRoutes);
 // Use activity routes for activity management
 app.use('/activities', activityRoutes);
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
-});
+app.listen(process.env.PORT , () => {
+  console.log(`Example app listening on port ${process.env.PORT}!`)
+})

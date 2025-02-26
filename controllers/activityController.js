@@ -108,16 +108,12 @@ const getStoredActivities = async (req, res) => {
     const user = req.user;
 
     try {
-        const activities = await Activity.find({ 
-            user: user._id,
-        })
+        const activities = await Activity.find()
             .sort({ start_date: -1 })
             .skip((page - 1) * per_page)
             .limit(parseInt(per_page));
 
-        const total = await Activity.countDocuments({ 
-            user: user._id,
-        });
+        const total = await Activity.countDocuments();
 
         res.json({
             activities,

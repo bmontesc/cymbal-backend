@@ -1,11 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express()
-<<<<<<< HEAD
-
-=======
 const cors = require('cors');
->>>>>>> 4338453 (backend changes)
 const mongoose = require('mongoose');
 
 app.use(cors());
